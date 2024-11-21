@@ -115,6 +115,21 @@
             color: white;
             padding: 10px;
             display: block;
+            position: relative;
+        }
+        .nav3 a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #3c096c;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav3 a:hover::after{
+            transform: scaleX(1);
         }
         .nav3 .dropdown-content{
             display: none;
